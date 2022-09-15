@@ -205,6 +205,10 @@ button:hover{
 
 header{
   text-align: center;
+  font-size: 30px;
+}
+.highlight{
+  color: rgb(255, 170, 0);
 }
 
 .blog{
@@ -214,6 +218,7 @@ header{
   border: 1px solid gray;
   border-radius: 10px;
 }
+
 
 
 
