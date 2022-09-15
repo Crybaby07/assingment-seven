@@ -141,10 +141,25 @@ button {
   cursor: pointer;
 }
 
-#histories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+button:hover{
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  width: 300px;
+  height: 50px;
+  color: white;
+  background-color: #740404;
+  border-radius: 10px;
+  border: 2px solid #64d877;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#histories{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     gap: 30px;
 }
 
 .card {
@@ -152,6 +167,7 @@ button {
   height: 100%;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
@@ -188,5 +204,24 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+
+  #histories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #question{
+    font-size: 20px;
+    padding: 10px 20px;
   }
 }
